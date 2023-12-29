@@ -2,9 +2,8 @@ import { useTodo } from "../hooks/useTodo"
 import { TodoItem } from "./TodoItem";
 
 export const TodoList = () => {
-    const { todoState } = useTodo();
-    const {todos} = todoState;
-    
+    const { todos } = useTodo();
+
     return (
         <>
         <div className="text-center flex flex-col gap-3">
